@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.FavouriteItemsActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titleCentered="false"
+        app:titleTextAppearance="@style/TextAppearance.TheFeast.OrderItemsToolbarTitle"
+        app:title="Favourite Name" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/favourite_items_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:columnCount="2">
+
+        <LinearLayout
+            android:layout_columnWeight="0.5"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/actor"
+                android:text="Total"
+                android:textSize="16sp" />
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/favourites_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adlam_display"
+                android:text="LKR 0.00"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/proceed_btn"
+            android:layout_columnWeight="1"
+            android:layout_gravity="center|fill_vertical"
+            android:layout_marginVertical="20dp"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/adlam_display"
+            android:text="Proceed to Checkout"
+            android:textSize="16sp"
+            app:cornerRadius="14dp" />
+    </GridLayout>
+</LinearLayout>

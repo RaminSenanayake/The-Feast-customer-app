@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_tab"
+        android:icon="@drawable/home_24px"
+        android:title="@string/home_text"
+        android:checkable="true"
+        android:checked="true"/>
+    <item
+        android:id="@+id/orders_tab"
+        android:icon="@drawable/list_24px"
+        android:title="@string/orders_text"
+        android:checkable="true"/>
+    <item
+        android:id="@+id/saved_tab"
+        android:icon="@drawable/favorite_24px"
+        android:title="@string/favourite_text"
+        android:checkable="true"/>
+    <item
+        android:id="@+id/cart_tab"
+        android:icon="@drawable/shopping_cart_24px"
+        android:title="@string/cart_text"
+        android:checkable="true"/>
+    <item
+        android:id="@+id/profile_tab"
+        android:icon="@drawable/person_24px"
+        android:title="@string/profile_text"
+        android:checkable="true"/>
+</menu>

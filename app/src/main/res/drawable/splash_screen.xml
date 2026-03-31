@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt">
+
+    <aapt:attr name="android:drawable">
+        <vector
+            android:width="800dp"
+            android:height="800dp"
+            android:viewportWidth="500"
+            android:viewportHeight="500">
+
+            <path android:name="p7" android:pathData="M 278.335 233.889 C 278.335 233.889 272.590 214.868 253.314 214.868 C 236.846 214.868 223.552 225.080 223.552 243.208 L 281.999 243.208 C 285.535 243.208 288.402 246.076 288.402 249.613 C 288.402 252.715 285.887 255.230 282.785 255.230 L 220.999 255.230 C 217.897 255.230 215.382 257.743 215.382 260.846 C 215.382 263.948 217.897 266.463 220.999 266.463 L 279.977 266.463 L 279.977 271.825 C 279.977 278.311 274.718 283.570 268.232 283.570 L 232.232 283.570 C 227.156 283.570 223.042 279.455 223.042 274.379" android:strokeColor="#FF7700" android:strokeWidth="5" android:strokeLineCap="round" android:trimPathEnd="0" />
+            <path android:name="p6" android:pathData="M 262.085 223.273 C 262.085 223.273 249.867 220.829 250.512 210.847 C 250.512 210.847 233.489 214.762 239.787 226.507 C 246.023 238.136 274.164 223.291 274.170 239.443 C 274.175 253.000 252.910 238.361 239.974 237.851 C 233.127 237.580 226.681 238.933 226.851 245.911 C 227.021 252.890 237.064 253.572 240.979 253.401 C 244.893 253.232 268.894 253.423 268.894 253.423 L 268.894 258.423 C 268.894 261.854 266.111 264.635 262.681 264.635 L 235.021 264.635 C 235.021 264.635 242.510 276.550 242.510 289.997 L 257.489 289.997 L 261.404 273.826" android:strokeColor="#FF7700" android:strokeWidth="5" android:strokeLineCap="round" android:trimPathEnd="0" />
+            <path android:name="p5" android:pathData="M 274.688 223.661 C 274.688 223.661 276.986 213.788 258.730 211.867 C 235.975 209.471 210.459 214.682 216.092 225.782 C 220.432 234.334 235.496 224.377 251.835 223.739 C 265.406 223.209 274.431 226.931 268.942 237.143 C 263.453 247.356 245.726 280.803 245.726 280.803 L 221.326 239.952" android:strokeColor="#FF7700" android:strokeWidth="5" android:strokeLineCap="round" android:trimPathEnd="0" />
+            <path android:name="p4" android:pathData="M 266.238 209.631 L 261.741 245.716 L 229.146 245.716 C 226.184 245.716 223.784 243.316 223.784 240.355 C 223.784 237.394 226.184 234.992 229.146 234.992 L 272.040 234.992 C 275.001 234.992 277.402 237.394 277.402 240.355 C 277.402 243.316 275.001 245.716 272.040 245.716 L 270.933 245.716 L 265.840 291.673 L 234.869 291.673 L 229.816 254.994" android:strokeColor="#FF7700" android:strokeWidth="5" android:strokeLineCap="round" android:trimPathEnd="0" />
+            <path android:name="p3" android:pathData="M 248.467 263.460 L 246.616 263.447 C 244.690 262.202 229.353 250.760 229.353 234.475 C 229.353 219.496 238.545 210.904 251.055 210.904 C 264.077 210.904 272.757 220.347 272.757 232.603 C 272.757 246.900 264.758 255.241 256.247 262.391 L 256.247 280.092 C 256.247 280.092 261.863 282.476 261.863 287.241 C 261.863 291.961 258.545 294.816 251.055 292.008 C 251.055 292.008 247.008 293.732 243.991 293.176 C 241.353 292.689 239.878 289.963 239.821 287.751 C 239.722 283.886 242.818 280.120 245.863 280.120 L 245.863 273.794" android:strokeColor="#FF7700" android:strokeWidth="5" android:strokeLineCap="round" android:trimPathEnd="0" />
+            <path android:name="p2" android:pathData="M 235.320 288.640 L 248.852 288.640 L 242.596 281.365 L 242.596 262.470 L 268.639 228.769 L 218.341 228.769 L 236.724 251.746 L 271.959 211.280 L 282.937 219.323" android:strokeColor="#FF7700" android:strokeWidth="5" android:strokeLineCap="round" android:trimPathEnd="0" />
+
+        </vector>
+    </aapt:attr>
+
+    <target android:name="p7">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:propertyName="trimPathEnd" android:duration="14000" android:repeatCount="infinite">
+                    <propertyValuesHolder android:propertyName="trimPathEnd">
+                        <keyframe android:fraction="0" android:value="0" />
+                        <keyframe android:fraction="0.054" android:value="1" />
+                        <keyframe android:fraction="1" android:value="1" />
+                    </propertyValuesHolder>
+                </objectAnimator>
+                <objectAnimator android:propertyName="trimPathStart" android:duration="14000" android:repeatCount="infinite">
+                    <propertyValuesHolder android:propertyName="trimPathStart">
+                        <keyframe android:fraction="0" android:value="0" />
+                        <keyframe android:fraction="0.089" android:value="0" />
+                        <keyframe android:fraction="0.143" android:value="1" />
+                        <keyframe android:fraction="1" android:value="1" />
+                    </propertyValuesHolder>
+                </objectAnimator>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="p6">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:propertyName="trimPathEnd" android:duration="14000" android:repeatCount="infinite">
+                    <propertyValuesHolder android:propertyName="trimPathEnd">
+                        <keyframe android:fraction="0" android:value="0" />
+                        <keyframe android:fraction="0.167" android:value="0" />
+                        <keyframe android:fraction="0.220" android:value="1" />
+                        <keyframe android:fraction="1" android:value="1" />
+                    </propertyValuesHolder>
+                </objectAnimator>
+                <objectAnimator android:propertyName="trimPathStart" android:duration="14000" android:repeatCount="infinite">
+                    <propertyValuesHolder android:propertyName="trimPathStart">
+                        <keyframe android:fraction="0" android:value="0" />
+                        <keyframe android:fraction="0.256" android:value="0" />
+                        <keyframe android:fraction="0.310" android:value="1" />
+                        <keyframe android:fraction="1" android:value="1" />
+                    </propertyValuesHolder>
+                </objectAnimator>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="p5">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:propertyName="trimPathEnd" android:duration="14000" android:repeatCount="infinite">
+                    <propertyValuesHolder android:propertyName="trimPathEnd">
+                        <keyframe android:fraction="0" android:value="0" />
+                        <keyframe android:fraction="0.333" android:value="0" />
+                        <keyframe android:fraction="0.387" android:value="1" />
+                        <keyframe android:fraction="1" android:value="1" />
+                    </propertyValuesHolder>
+                </objectAnimator>
+                <objectAnimator android:propertyName="trimPathStart" android:duration="14000" android:repeatCount="infinite">
+                    <propertyValuesHolder android:propertyName="trimPathStart">
+                        <keyframe android:fraction="0" android:value="0" />
+                        <keyframe android:fraction="0.423" android:value="0" />
+                        <keyframe android:fraction="0.476" android:value="1" />
+                        <keyframe android:fraction="1" android:value="1" />
+                    </propertyValuesHolder>
+                </objectAnimator>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="p4">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:propertyName="trimPathEnd" android:duration="14000" android:repeatCount="infinite">
+                    <propertyValuesHolder android:propertyName="trimPathEnd">
+                        <keyframe android:fraction="0" android:value="0" />
+                        <keyframe android:fraction="0.500" android:value="0" />
+                        <keyframe android:fraction="0.554" android:value="1" />
+                        <keyframe android:fraction="1" android:value="1" />
+                    </propertyValuesHolder>
+                </objectAnimator>
+                <objectAnimator android:propertyName="trimPathStart" android:duration="14000" android:repeatCount="infinite">
+                    <propertyValuesHolder android:propertyName="trimPathStart">
+                        <keyframe android:fraction="0" android:value="0" />
+                        <keyframe android:fraction="0.589" android:value="0" />
+                        <keyframe android:fraction="0.643" android:value="1" />
+                        <keyframe android:fraction="1" android:value="1" />
+                    </propertyValuesHolder>
+                </objectAnimator>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="p3">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:propertyName="trimPathEnd" android:duration="14000" android:repeatCount="infinite">
+                    <propertyValuesHolder android:propertyName="trimPathEnd">
+                        <keyframe android:fraction="0" android:value="0" />
+                        <keyframe android:fraction="0.667" android:value="0" />
+                        <keyframe android:fraction="0.720" android:value="1" />
+                        <keyframe android:fraction="1" android:value="1" />
+                    </propertyValuesHolder>
+                </objectAnimator>
+                <objectAnimator android:propertyName="trimPathStart" android:duration="14000" android:repeatCount="infinite">
+                    <propertyValuesHolder android:propertyName="trimPathStart">
+                        <keyframe android:fraction="0" android:value="0" />
+                        <keyframe android:fraction="0.756" android:value="0" />
+                        <keyframe android:fraction="0.810" android:value="1" />
+                        <keyframe android:fraction="1" android:value="1" />
+                    </propertyValuesHolder>
+                </objectAnimator>
+            </set>
+        </aapt:attr>
+    </target>
+
+    <target android:name="p2">
+        <aapt:attr name="android:animation">
+            <set android:ordering="together">
+                <objectAnimator android:propertyName="trimPathEnd" android:duration="14000" android:repeatCount="infinite">
+                    <propertyValuesHolder android:propertyName="trimPathEnd">
+                        <keyframe android:fraction="0" android:value="0" />
+                        <keyframe android:fraction="0.833" android:value="0" />
+                        <keyframe android:fraction="0.887" android:value="1" />
+                        <keyframe android:fraction="1" android:value="1" />
+                    </propertyValuesHolder>
+                </objectAnimator>
+                <objectAnimator android:propertyName="trimPathStart" android:duration="14000" android:repeatCount="infinite">
+                    <propertyValuesHolder android:propertyName="trimPathStart">
+                        <keyframe android:fraction="0" android:value="0" />
+                        <keyframe android:fraction="0.923" android:value="0" />
+                        <keyframe android:fraction="0.976" android:value="1" />
+                        <keyframe android:fraction="1" android:value="1" />
+                    </propertyValuesHolder>
+                </objectAnimator>
+            </set>
+        </aapt:attr>
+    </target>
+
+</animated-vector>

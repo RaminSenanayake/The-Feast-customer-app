@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">The Feast</string>
+    <string name="home_text">Home</string>
+    <string name="orders_text">Orders</string>
+    <string name="favourite_text">Favourites</string>
+    <string name="cart_text">Cart</string>
+    <string name="profile_text">Profile</string>
+
+    <string name="full_name_text">Full Name</string>
+    <string name="email_text">Email</string>
+    <string name="password_text">Password</string>
+    <string name="sign_up_text">Sign Up</string>
+    <string name="sign_in_text">Sign In</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="search_hint">Search</string>
+
+    <string name="stripe_publishable_key">pk_test_51TFK1ALg0bMlD83JFGj2JLoZKJR5NGXhpGepzSXfhrYbd1M6ZWlek9Dr2Q0gjLLS4UARZTv7UXyOa3vdboGzi4IH00oe62Pgi0</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="short_distance_string">*Delivery fee is charged LKR 100.00 per 1km</string>
+    <string name="long_distance_string">*Deliveries are only done within 5km</string>
+    <string name="default_notification_channel_id">default_channel</string>
+    <string name="cart_empty_text">Your deliciousness awaits you. What are you watiting for?</string>
+    <string name="empty_favourites_text">Need to save regulars? They will be kept safe right here</string>
+    <string name="orders_empty_text">Looks like you haven\'t made your first order yet. Take your time and browse through The Feast</string>
+</resources>
