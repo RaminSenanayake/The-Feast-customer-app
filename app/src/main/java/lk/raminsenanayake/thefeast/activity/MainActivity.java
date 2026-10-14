@@ -1,13 +1,17 @@
 package lk.raminsenanayake.thefeast.activity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.Network;
 import android.os.Bundle;
 import android.os.CancellationSignal;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.ViewGroup.MarginLayoutParams;
 import android.view.WindowManager;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
@@ -48,6 +52,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private final String TAG = MainActivity.class.getSimpleName();
     private ActivityMainBinding mainBinding;
     private FirebaseAuth auth;
+    private ConnectivityManager.NetworkCallback networkCallback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -147,6 +152,41 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             mainBinding.main.close();
             signOut();
         });
+    }
+
+    private boolean wasOffline;
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+        networkCallback = new ConnectivityManager.NetworkCallback() {
+            @Override
+            public void onAvailable(@NonNull Network network) {
+                if (wasOffline) {
+                    wasOffline = false;
+                    Toast.makeText(MainActivity.this, "You're back online", Toast.LENGTH_SHORT).show();
+                }
+            }
+
+            @Override
+            public void onLost(@NonNull Network network) {
+                if (!wasOffline) {
+                    wasOffline = true;
+                    Toast.makeText(MainActivity.this, "You're offline", Toast.LENGTH_SHORT).show();
+                }
+            }
+        };
+        cm.registerDefaultNetworkCallback(networkCallback);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        cm.unregisterNetworkCallback(networkCallback);
+        networkCallback = null;
     }
 
     @Override
